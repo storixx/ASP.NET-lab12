@@ -1,0 +1,19 @@
+@model IEnumerable<WebApplication12.Data.Models.Company>
+
+<h2>Companies</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Number Of Employees</th>
+    </tr>
+    @foreach (var company in Model)
+    {
+        <tr>
+            <td>@company.Name</td>
+            <td>@company.Address</td>
+            <td>@company.NumberOfEmployees</td>
+        </tr>
+    }
+</table>
